@@ -11,7 +11,7 @@ public class FileCreator {
     }
 
     private String createDirectory(){
-        File directory = new File(System.getProperty("user.home") + "/SecureNotesDetails");
+        File directory = new File(System.getProperty("user.home") + "/PasswordManagerDetails");
         if (!directory.exists()) {
             directory.mkdir();
         }
@@ -23,7 +23,7 @@ public class FileCreator {
         File directory = new File((path + "/name.txt"));
         if (!directory.exists()) {
             try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(directory), "utf-8"))) {
-                writer.write("ghost");
+                writer.write("user");
             }
         }
     }
