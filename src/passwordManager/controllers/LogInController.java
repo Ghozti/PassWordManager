@@ -20,4 +20,12 @@ public class LogInController {
     }
 
 
+    /** gets the text from the nameField and passwordField fxml fields**/
+    private String getName(){
+        return nameField.getText();
+    }
+
+    private String getPassword() {
+        return passwordField.getText();
+    }
 }
