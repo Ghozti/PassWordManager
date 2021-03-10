@@ -4,13 +4,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import passwordManager.Main;
+import passwordManager.utils.CredentialsValidator;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class LogInController {
+public class LogInController extends CredentialsValidator {
 
     //name text field found on the logIn UI
     @FXML
@@ -20,8 +22,14 @@ public class LogInController {
     @FXML
     private PasswordField passwordField = new PasswordField();
 
+    //main object
+    Main main = new Main();
+
     //once the logIn button id clicked this method will be called
-    public void logIn(ActionEvent actionEvent) {
+    public void logIn(ActionEvent actionEvent) throws IOException {
+        if (validateName(getName(),getNameField()) && validatePass(getPass(),getPasswordField())){
+            main.changeScene("MainUI","Password Mananger", 1200,800,false);
+        }
     }
 
 
