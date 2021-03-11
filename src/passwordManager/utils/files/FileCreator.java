@@ -1,10 +1,6 @@
-package passwordManager.utils;
-
-import javafx.fxml.Initializable;
+package passwordManager.utils.files;
 
 import java.io.*;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 public class FileCreator {
 
