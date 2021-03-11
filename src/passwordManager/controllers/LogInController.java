@@ -6,7 +6,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import passwordManager.Main;
 import passwordManager.utils.CredentialsValidator;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,7 +27,7 @@ public class LogInController extends CredentialsValidator {
     //once the logIn button id clicked this method will be called
     public void logIn(ActionEvent actionEvent) throws IOException {
         if (validateName(getName(),getNameField()) && validatePass(getPass(),getPasswordField())){
-            main.changeScene("MainUI","Password Mananger", 1200,800,false);
+            main.changeScene("MainUI","Password Mananger", 1585,950,false);
         }
     }
 

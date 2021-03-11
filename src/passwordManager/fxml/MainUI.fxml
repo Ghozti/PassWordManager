@@ -6,13 +6,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0" prefWidth="1650.0" style="-fx-background-color: #0D1117;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="1585.0" style="-fx-background-color: #0D1117;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="passwordManager.controllers.MainUIController">
    <top>
       <AnchorPane prefHeight="60.0" prefWidth="1200.0" BorderPane.alignment="CENTER" />
    </top>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="890.0" prefWidth="1627.0" BorderPane.alignment="CENTER">
          <children>
             <Text fill="WHITE" layoutX="255.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name/E-mail/Phone">
                <font>
@@ -24,14 +23,14 @@
                   <Font size="22.0" />
                </font>
             </Text>
-            <TextField layoutX="255.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
-            <TextField layoutX="490.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="nameField1" layoutX="255.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="passField1" layoutX="490.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
             <Text fill="WHITE" layoutX="79.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account">
                <font>
                   <Font size="22.0" />
                </font>
             </Text>
-            <TextField layoutX="20.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="accField1" layoutX="20.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
             <TextField layoutX="877.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
             <TextField layoutX="1118.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
             <TextField layoutX="1368.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
@@ -44,6 +43,21 @@
             <TextField layoutX="19.0" layoutY="140.0" prefHeight="25.0" prefWidth="199.0" />
             <TextField layoutX="254.0" layoutY="140.0" prefHeight="25.0" prefWidth="199.0" />
             <TextField layoutX="490.0" layoutY="140.0" prefHeight="25.0" prefWidth="199.0" />
+            <Text fill="WHITE" layoutX="937.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="1119.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name/E-mail/Phone">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="1422.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
    </center>
