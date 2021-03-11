@@ -34,15 +34,15 @@
             <TextField layoutX="877.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
             <TextField layoutX="1118.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
             <TextField layoutX="1368.0" layoutY="35.0" prefHeight="25.0" prefWidth="199.0" />
-            <TextField layoutX="19.0" layoutY="70.0" prefHeight="25.0" prefWidth="199.0" />
-            <TextField layoutX="254.0" layoutY="70.0" prefHeight="25.0" prefWidth="199.0" />
-            <TextField layoutX="490.0" layoutY="70.0" prefHeight="25.0" prefWidth="199.0" />
-            <TextField layoutX="490.0" layoutY="105.0" prefHeight="25.0" prefWidth="199.0" />
-            <TextField layoutX="255.0" layoutY="105.0" prefHeight="25.0" prefWidth="199.0" />
-            <TextField layoutX="20.0" layoutY="105.0" prefHeight="25.0" prefWidth="199.0" />
-            <TextField layoutX="19.0" layoutY="140.0" prefHeight="25.0" prefWidth="199.0" />
-            <TextField layoutX="254.0" layoutY="140.0" prefHeight="25.0" prefWidth="199.0" />
-            <TextField layoutX="490.0" layoutY="140.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="accField2" layoutX="19.0" layoutY="70.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="nameField2" layoutX="254.0" layoutY="70.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="passField2" layoutX="490.0" layoutY="70.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="passField3" layoutX="490.0" layoutY="105.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="nameField3" layoutX="255.0" layoutY="105.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="accField3" layoutX="20.0" layoutY="105.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="accField4" layoutX="19.0" layoutY="140.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="nameField4" layoutX="254.0" layoutY="140.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextField fx:id="passField4" layoutX="490.0" layoutY="140.0" prefHeight="25.0" prefWidth="199.0" />
             <Text fill="WHITE" layoutX="937.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account">
                <font>
                   <Font size="22.0" />

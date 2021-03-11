@@ -33,4 +33,14 @@ public class MainUIController {
 
     @FXML
     TextField passField3;
+
+
+    @FXML
+    TextField accField4;
+
+    @FXML
+    TextField nameField4;
+
+    @FXML
+    TextField passField4;
 }
