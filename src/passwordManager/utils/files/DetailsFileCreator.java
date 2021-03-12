@@ -2,7 +2,7 @@ package passwordManager.utils.files;
 
 import java.io.*;
 
-public class detailsFileCreator {
+public class DetailsFileCreator {
 
     public String createSubDir(String name) {
         File directory = new File(System.getProperty("user.home") + "/PasswordManagerDetails/" + name);

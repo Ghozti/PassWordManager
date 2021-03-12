@@ -2,7 +2,6 @@ package passwordManager.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import passwordManager.utils.files.detailsFileCreator;
 
 public class MainUIController {
 
