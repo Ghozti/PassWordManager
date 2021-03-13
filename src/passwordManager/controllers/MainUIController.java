@@ -1,5 +1,6 @@
 package passwordManager.controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -43,4 +44,7 @@ public class MainUIController {
 
     @FXML
     TextField passField4;
+
+ public void save(ActionEvent actionEvent) {
+ }
 }
