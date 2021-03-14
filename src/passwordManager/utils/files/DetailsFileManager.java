@@ -2,32 +2,25 @@ package passwordManager.utils.files;
 
 import java.io.*;
 
-public class DetailsFileManager {
+public class DetailsFileManager extends FileCreator{
 
-    public String createSubDir(String name) {
-        File directory = new File(System.getProperty("user.home") + "/PasswordManagerDetails/" + name);
+    public void createAccountDir(String name) {
+        File directory = new File(System.getProperty("user.home") + "/PasswordManagerDetails" + name + "/");
+    }
+
+    public void createFile(String dirName) {
+        File directory = new File(System.getProperty("user.home") + "/PasswordManagerDetails" + "/" + dirName);
         if (!directory.exists()) {
             directory.mkdir();
         }
-        return directory.getAbsolutePath();
     }
 
-    public String createAccountDir(String path, String name) {
-        File directory = new File(System.getProperty("user.home") + "/PasswordManagerDetails/" + path + "/" + name + "/");
-        if (!directory.exists()) {
-            directory.mkdir();
-        }
-        return directory.getAbsolutePath();
-    }
-
-    public void createFile(String path, String name, String content) {
-        File directory = new File((path + "/" + name + ".txt"));
-        if (!directory.exists()) {
-            try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(directory), "utf-8"))) {
-                writer.write("");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    public void saveFile(String dirName, String fileName, String content){
+        File directory = new File(System.getProperty("user.home") + "/PasswordManagerDetails" + dirName + "/" + fileName);
+        try (Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(directory), "utf-8"))) {
+            writer.write(content);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
